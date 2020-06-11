@@ -27,11 +27,11 @@ const sections = document.querySelectorAll('section');
 */
 function getActiveElement () {
     let maxSection = sections[0];
-    let minVal = 1000000;
+    let minValue = 1000000;
     for (item of sections) {
         let bound = item.getBoundingClientRect();
-        if (bound.top > -300 && bound.top < minVal) {
-            minVal = bound.top;
+        if (bound.top > -300 && bound.top < minValue) {
+            minValue = bound.top;
             maxSection = item;
         }
     }
