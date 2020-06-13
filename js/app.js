@@ -17,7 +17,7 @@
  * Define Global Variables
  * 
 */
-const navbar = document.querySelector('#navbar__list');
+const navbar = document.getElementById('navbar__list');
 const sections = document.querySelectorAll('section');
 
 /**
@@ -46,6 +46,16 @@ function getActiveElement () {
 */
 
 // build the nav
+
+// const buildNav = () => {
+//     for (let item of sections) {
+//         let section = document.createElement('li');
+        
+//     }
+// }
+
+// buildNav();
+
 function addSection() {
     for (let item of sections) {
         let section = document.createElement('li');
